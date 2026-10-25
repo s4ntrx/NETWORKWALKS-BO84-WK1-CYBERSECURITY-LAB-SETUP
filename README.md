@@ -25,7 +25,7 @@ Week 01 | Practical Assignment WK1-PM1 | Cybersecurity Lab Setup
 
 
 
-📌 1. Project Overview
+## 📌 1. Project Overview
 
 This project focuses on building a controlled cybersecurity laboratory using virtualization technology and Kali Linux. The goal is to prepare a reliable environment where security tools can be explored, network behavior can be observed, and practical cybersecurity exercises can be performed safely.
 
@@ -33,7 +33,7 @@ Instead of working directly on a physical machine or an everyday network, the la
 
 This repository serves as a technical record of the installation process, network configuration, connectivity tests, challenges encountered, and lessons learned during the setup.
 
-🎯 2. Project Objectives
+## 🎯 2. Project Objectives
 
 The key objectives of this assignment are to:
 
@@ -45,7 +45,8 @@ Verify network connectivity using Linux networking utilities.
 Confirm that essential cybersecurity tools are available.
 Create a recoverable baseline using virtual machine snapshots.
 Document configuration decisions and provide evidence of successful testing.
-🧰 3. Tools and Technologies
+
+## 🧰 3. Tools and Technologies
 Tool / Technology	Role in the Project
 Oracle VirtualBox	Runs and manages virtual machines
 Kali Linux	Provides the Linux environment for security learning
@@ -54,12 +55,13 @@ VirtualBox NAT Network	Provides networking for participating virtual machines
 Linux terminal	Used for configuration and diagnostic commands
 GitHub	Stores project documentation and screenshots
 
-Official resources
+### Official resources
 
 Oracle VirtualBox
 Kali Linux Downloads
 7-Zip
-🏗️ 4. Laboratory Design
+
+## 🏗️ 4. Laboratory Design
 
 The laboratory consists of a host computer running VirtualBox, with Kali Linux operating as a guest virtual machine.
 
@@ -81,7 +83,7 @@ text
 
 Note: This is a logical representation. Update it if your actual network configuration differs.
 
-⚙️ 5. Lab Configuration
+## ⚙️ 5. Lab Configuration
 
 The following table records the configuration used for this assignment. Replace the example values with the settings from your own system.
 
@@ -99,8 +101,8 @@ Default gateway	[Your gateway]
 DNS server	[Your DNS server]
 Snapshot name	[Your snapshot name]
 Configuration note: IP addresses and gateway values depend on the virtual network you create. Do not copy the sample's addressing values without verifying that they match your own environment.
-🪜 6. Implementation Procedure
-Step 1: Prepare the host environment
+## 🪜 6. Implementation Procedure
+### Step 1: Prepare the host environment
 
 I checked the host computer's available memory, storage, and virtualization support before creating the virtual machine.
 
@@ -108,23 +110,22 @@ I also obtained the required software from its official download source.
 
 Purpose: Ensure that the host system can support the virtualized lab.
 
-Step 2: Install VirtualBox
+### Step 2: Install VirtualBox
 
 I installed Oracle VirtualBox and verified that the application opened correctly.
 
 The hypervisor provides the resources needed to create, configure, start, stop, and recover virtual machines.
 
-Evidence: Add a screenshot showing the VirtualBox Manager window.
-
-Step 3: Prepare Kali Linux
+Evidence:
+### Step 3: Prepare Kali Linux
 
 I downloaded or imported the Kali Linux virtual machine and checked its basic settings before starting it.
 
 The virtual machine's memory allocation and network adapter were configured according to the available host resources and lab requirements.
 
-Evidence: Add a screenshot showing the Kali Linux virtual machine in VirtualBox.
+Evidence: 
 
-Step 4: Configure the virtual network
+### Step 4: Configure the virtual network
 
 I created or selected a virtual network appropriate for the assignment and attached the Kali Linux network adapter to it.
 
@@ -132,77 +133,53 @@ The network configuration was checked to ensure that the guest operating system 
 
 A NAT Network can allow participating virtual machines to communicate with one another while providing outbound connectivity. Actual connectivity depends on the network settings and firewall rules.
 
-Evidence: Add a screenshot of the VirtualBox network settings.
+Evidence: 
 
-Step 5: Inspect Kali Linux network settings
+### Step 5: Inspect Kali Linux network settings
 
-After starting Kali Linux, I used the terminal to inspect its network interfaces and IP configuration.
-
-bash
-ip a
+After starting Kali Linux, I used the terminal to inspect its network interfaces and IP configuration.`ip a`
 
 
-To inspect the routing table, I ran:
-
-bash
-ip route
+To inspect the routing table, I ran:`ip route`
 
 
 These commands help identify the assigned IP address, active interfaces, and configured network routes.
 
-If the assignment requires a static IP address, document the method used and verify that the address belongs to the intended subnet.
 
-Evidence: Add a terminal screenshot showing your actual network configuration.
+Evidence:
 
-Step 6: Verify connectivity
+### Step 6: Verify connectivity
 
 I tested the network configuration using diagnostic commands.
 
-Check the routing and gateway configuration:
-
-bash
-ip route
+- Check the routing and gateway configuration: `ip route`
 
 
-Test the configured gateway, replacing the example address with your actual gateway:
-
-bash
-ping -c 4 <gateway-ip>
+- Test the configured gateway, replacing the example address with your actual gateway: `ping -c 4 <gateway-ip>`
 
 
-Test external IP connectivity, if permitted by the lab configuration:
-
-bash
-ping -c 4 1.1.1.1
+- Test external IP connectivity, if permitted by the lab configuration: `ping -c 4 1.1.1.1`
 
 
-Check DNS resolution:
-
-bash
-getent hosts example.com
+- Check DNS resolution: `getent hosts example.com`
 
 
-Check the installed Nmap version:
-
-bash
-nmap --version
+- Check the installed Nmap version: `nmap --version`
 
 
-The results were used to distinguish local network connectivity, external IP connectivity, DNS resolution, and tool availability.
+- The results were used to distinguish local network connectivity, external IP connectivity, DNS resolution, and tool availability.
 
 Important: A failed ping does not always indicate a broken network; a destination or firewall may block ICMP traffic.
 
-Step 7: Create a recovery snapshot
+### Step 7: Create a recovery snapshot
 
-Once the initial configuration was verified, I created a VirtualBox snapshot named:
-
-CyberLab-Baseline
+Once the initial configuration was verified, I created a VirtualBox snapshot named: `CyberLab-Baseline`
 
 The snapshot provides a recovery point that can be used if later experiments cause unwanted changes.
 
-Evidence: Add a screenshot showing the saved snapshot in VirtualBox.
+Evidence: 
 
-🔎 7. Verification and Results
+## 🔎 7. Verification and Results
 
 Complete this table using your actual test results.
 
@@ -222,13 +199,13 @@ The verification process helped establish whether the virtual machine was config
 
 Only mark a test as passed when you have observed and recorded the corresponding result.
 
-🐛 8. Challenges and Troubleshooting
+## 🐛 8. Challenges and Troubleshooting
 
 A technical project should document problems as well as successful outcomes.
 
 Use the following format to record issues encountered during your setup.
 
-Challenge 1: [Describe the issue]
+### Challenge 1: [Describe the issue]
 
 Observed behavior:
 [Explain what happened and any error message displayed.]
@@ -242,7 +219,7 @@ Solution applied:
 Verification:
 [Record the test used to confirm whether the issue was resolved.]
 
-Challenge 2: [Describe another issue, if applicable]
+### Challenge 2: [Describe another issue, if applicable]
 
 Observed behavior:
 [Describe the problem.]
@@ -256,9 +233,9 @@ Resolution:
 Outcome:
 [Explain whether the solution worked.]
 
-If you did not encounter any significant problems, document a configuration check you performed and explain why it was important.
 
-🧠 9. Key Lessons Learned
+
+## 🧠 9. Key Lessons Learned
 
 This assignment demonstrates several important cybersecurity and system administration concepts.
 
@@ -269,7 +246,7 @@ DNS: Name resolution translates domain names into addresses that applications ca
 Troubleshooting: Testing individual network layers helps narrow down the source of connectivity problems.
 Snapshots: Recovery points make experimentation more manageable by allowing a virtual machine to return to a previous state.
 Technical documentation: Clear commands, screenshots, configuration records, and test results make work easier to reproduce and review.
-🛡️ 10. Security and Ethical Considerations
+## 🛡️ 10. Security and Ethical Considerations
 
 This environment is intended for educational use and authorized security testing.
 
@@ -279,9 +256,8 @@ Verify network adapter settings before performing potentially disruptive exercis
 Use trusted software sources and keep the lab updated.
 Avoid storing passwords, private keys, access tokens, or other sensitive information in the repository.
 Create snapshots before making significant configuration changes.
-📸 11. Project Evidence
+## 📸 11. Project Evidence
 
-Screenshots should demonstrate your actual work rather than copied results from another project.
 
 Suggested repository structure:
 
@@ -315,22 +291,21 @@ Learning basic firewall configuration and traffic filtering.
 Recording findings in structured security assessment reports.
 Automating routine verification checks with simple scripts.
 
-Each extension should be introduced incrementally and tested within the authorized lab environment.
 
-📚 13. References
+## 📚 13. References
 Kali Linux Official Website
 VirtualBox Documentation
 Nmap Official Documentation
 GitHub Markdown Guide
-👤 14. Author and Assignment Details
+## 👤 14. Author and Assignment Details
 Field	Details
-Student name	[Your full name]
+Student name	Peter Kariuki W.
 Student / batch ID	[Your assigned ID]
 Training program	[Your program name]
 Assignment	WK1-PM1 — Cybersecurity Lab Setup
 Repository	[Your GitHub repository URL]
 Completion date	[Date completed]
-🏁 Conclusion
+## 🏁 Conclusion
 
 This project established the foundation for a practical cybersecurity learning environment by bringing together virtualization, Linux system configuration, network verification, and technical documentation.
 
