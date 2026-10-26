@@ -1,4 +1,4 @@
-# Building My Cybersecurity Lab: From Virtualization to Network Verification
+# Building My Cybersecurity Lab
 
 **Week 01 | Practical Assignment WK1-PM1 | Cybersecurity Lab Setup**
 
