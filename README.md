@@ -1,4 +1,4 @@
-# Building My Cybersecurity Lab
+# Cybersecurity Lab Setup
 
 **Week 01 | Practical Assignment WK1-PM1 | Cybersecurity Lab Setup**
 
