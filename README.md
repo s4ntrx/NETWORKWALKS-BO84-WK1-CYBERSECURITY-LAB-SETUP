@@ -90,7 +90,7 @@ Future Authorized Targets
 - Verified that the application opened correctly.
 - Prepared the environment for virtual machine creation.
 
-**Evidence:** `screenshots/01-virtualbox-manager.png`
+**Evidence:** ![VirtualBox Install](screenshots/virtualbox.png)
 
 ### Step 3: Prepare Kali Linux
 
@@ -99,7 +99,7 @@ Future Authorized Targets
 - Checked the network adapter settings.
 - Started the virtual machine.
 
-**Evidence:** `screenshots/02-kali-vm-settings.png`
+**Evidence:** ![Kali Linux Setup](screenshots/kalilinuxsetup.png)
 
 **Resource:**
 - [Kali Linux Documentation](https://www.kali.org/docs/)
@@ -110,7 +110,7 @@ Future Authorized Targets
 - Attached the Kali Linux network adapter.
 - Verified the selected networking mode.
 
-**Evidence:** `screenshots/03-virtual-network.png`
+**Evidence:** ![Kali Linux Network Configuration](screenshots/virtualnetworkkali.png)
 
 **Resource:**
 - [VirtualBox Networking Documentation](https://www.virtualbox.org/manual/ch06.html)
@@ -134,7 +134,7 @@ ip route
 - Confirm IP address assignment.
 - Inspect the default gateway and routing configuration.
 
-**Evidence:** `screenshots/04-ip-configuration.png`
+**Evidence:** ![Kali IP Configuration](screenshots/ipconfigurationkali.png)
 
 ### Step 6: Verify Connectivity
 
@@ -170,17 +170,17 @@ nmap --version
 
 **Important:** Replace `<gateway-ip>` with your actual gateway address. Failed ping tests may result from ICMP filtering rather than a network failure.
 
-**Evidence:** `screenshots/05-connectivity-tests.png`
+**Evidence:** ![Connectivity Tests](screenshots/connectivitytests.png)
 
 ### Step 7: Create a Recovery Snapshot
 
 Create a VirtualBox snapshot named:
 
-`CyberLab-Baseline`
+`cyberLab1`
 
 The snapshot provides a recovery point before future experiments.
 
-**Evidence:** `screenshots/06-baseline-snapshot.png`
+**Evidence:** ![Kali Linux Snapshot](screenshots/snapshotkali.png)
 
 ---
 
@@ -211,9 +211,13 @@ The snapshot provides a recovery point before future experiments.
 
 - **Observed behavior:** The virtualbox asked for an ISO image but Kali has .vbox and .vdi
 - **Investigation:** when importing Kali linux to VirtulaBox error occurred.
-- **Solution:** I ran the command `VBoxManage registervm /home/s4ntrx/Downloads/kali-linux-2026.2-virtualbox-amd64/kali-linux-2026.2-virtualbox-amd64.vbox`
+- **Solution:** I ran the command
+  ```bash
+  VBoxManage registervm /home/s4ntrx/Downloads/kali-linux-2026.2-virtualbox-amd64/kali-linux-2026.2-virtualbox-amd64.vbox
+  ```
+  
 - **Verification:** It worked
-- **Evidence** 
+- **Evidence** ![Solution](screenshots/solutioninstallkali.png)
 
 
 ---
