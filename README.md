@@ -49,7 +49,7 @@ Virtual Network
      |
 Kali Linux
      |
-Future Authorized Targets
+Windows10
 ```
 
 ## ⚙️ 5. Lab Configuration
@@ -62,12 +62,12 @@ Future Authorized Targets
 | Kali Linux Version | 2026.2 |
 | Kali RAM Allocation | 2Gb |
 | Network Mode |  NAT Network |
-| Network Name | LabNET1 |
+| Network Name | LabNAT1 |
 | IPv4 Network | 10.0.0.0/24 |
 | Kali IPv4 Address | 10.0.0.3 |
 | Default Gateway | 10.0.0.1 |
 | DNS Server | 8.8.8.8 |
-| Snapshot Name | `CyberLab1` |
+| Snapshot Name | `cyberLab1` |
 
 
 ---
