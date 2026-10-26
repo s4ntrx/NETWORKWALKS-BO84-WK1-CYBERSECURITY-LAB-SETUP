@@ -56,17 +56,17 @@ Future Authorized Targets
 
 | Component | My Configuration |
 |---|---|
-| Host OS | [Windows / Linux / macOS] |
-| Host RAM | [Available RAM] |
-| VirtualBox Version | [Installed version] |
-| Kali Linux Version | [Installed version] |
-| Kali RAM Allocation | [RAM allocation] |
-| Network Mode | [NAT / NAT Network / Host-only] |
-| Network Name | [Your network name] |
-| IPv4 Network | [Your subnet in CIDR notation] |
-| Kali IPv4 Address | [Your Kali IP address] |
-| Default Gateway | [Your gateway] |
-| DNS Server | [Your DNS server] |
+| Host OS | Parrot Os |
+| Host RAM | 8Gb |
+| VirtualBox Version | v7.2.22 |
+| Kali Linux Version | 2026.2 |
+| Kali RAM Allocation | 2Gb |
+| Network Mode |  NAT Network |
+| Network Name | LabNET1 |
+| IPv4 Network | 10.0.0.0/24 |
+| Kali IPv4 Address | 10.0.0.3 |
+| Default Gateway | 10.0.0.1 |
+| DNS Server | 8.8.8.8 |
 | Snapshot Name | `CyberLab-Baseline` |
 
 **Configuration note:** Use the actual values from your environment.
