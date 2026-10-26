@@ -2,7 +2,7 @@
 
 **Week 01 | Practical Assignment WK1-PM1 | Cybersecurity Lab Setup**
 
-A hands-on project documenting the creation of a virtual cybersecurity environment for learning network configuration, system administration, and ethical security testing.
+
 
 <p align="center">
   <img src="https://img.shields.io/badge/Skill-Cybersecurity-404040?style=flat-square&labelColor=C00000" />
@@ -18,6 +18,8 @@ A hands-on project documenting the creation of a virtual cybersecurity environme
   <img src="https://img.shields.io/badge/Ethical%20Hacking-E87500?style=flat-square&labelColor=000000&logo=kalilinux&logoColor=white" />
   <img src="https://img.shields.io/badge/s4ntrx-C00000?style=flat-square" />
 </p>
+
+A hands-on project documenting the creation of a virtual cybersecurity environment for learning network configuration, system administration, and ethical security testing.
 
 ---
 
