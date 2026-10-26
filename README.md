@@ -69,7 +69,6 @@ Future Authorized Targets
 | DNS Server | 8.8.8.8 |
 | Snapshot Name | `CyberLab-Baseline` |
 
-**Configuration note:** Use the actual values from your environment.
 
 ---
 
