@@ -246,17 +246,9 @@ The snapshot provides a recovery point before future experiments.
 
 ---
 
-## 📸 11. Project Evidence
-
-
-### Displaying Screenshots
-
-Use the following Markdown syntax to display a screenshot:
-
-```markdown
-![VirtualBox network configuration](screenshots/03-virtual-network.png)
-```
-
+##  11. Victim Machine Setup(WIndows10)
+### Windows10 Setup
+![Complete Windows10 Setup](screenshots/windows10completesetup.png)
 
 
 
@@ -291,11 +283,11 @@ Use the following Markdown syntax to display a screenshot:
 | Field | Details |
 |---|---|
 | Student Name | Peter Kariuki W. |
-| Student / Batch ID | [Your assigned ID] |
-| Training Program | [Your program name] |
+| Student / Batch ID | B084 |
+| Training Program | CyberSecurity Internship |
 | Assignment | WK1-PM1 — Cybersecurity Lab Setup |
-| Repository | [Your GitHub repository URL] |
-| Completion Date | [Date completed] |
+| Repository | https://github.com/s4ntrx/NETWORKWALKS-BO84-WK1-PMI-CYBERSECURITY-LAB-SETUP |
+| Completion Date | 27-10-2026 |
 
 ---
 
