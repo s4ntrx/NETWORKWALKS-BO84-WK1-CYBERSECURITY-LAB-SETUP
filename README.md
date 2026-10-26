@@ -67,7 +67,7 @@ Future Authorized Targets
 | Kali IPv4 Address | 10.0.0.3 |
 | Default Gateway | 10.0.0.1 |
 | DNS Server | 8.8.8.8 |
-| Snapshot Name | `CyberLab-Baseline` |
+| Snapshot Name | `CyberLab1` |
 
 
 ---
