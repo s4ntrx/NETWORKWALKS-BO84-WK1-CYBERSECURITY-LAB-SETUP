@@ -53,22 +53,21 @@ Windows10
 ```
 
 ## ⚙️ 5. Lab Configuration
-
 | Component | My Configuration |
 |---|---|
-| Host OS | Parrot Os |
-| Host RAM | 8Gb |
+| Host OS | Parrot OS |
+| Host RAM | 8GB |
 | VirtualBox Version | v7.2.22 |
 | Kali Linux Version | 2026.2 |
-| Kali RAM Allocation | 2Gb |
-| Network Mode |  NAT Network |
+| Kali RAM Allocation | 2GB |
+| Network Mode | NAT Network |
 | Network Name | LabNAT1 |
 | IPv4 Network | 10.0.0.0/24 |
 | Kali IPv4 Address | 10.0.0.3 |
 | Default Gateway | 10.0.0.1 |
 | DNS Server | 8.8.8.8 |
 | Snapshot Name | `cyberLab1` |
-
+| Windows 10 | 10.0.0.4 |
 
 ---
 
