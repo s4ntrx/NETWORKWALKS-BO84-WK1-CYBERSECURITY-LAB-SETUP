@@ -33,7 +33,7 @@ A hands-on project documenting the creation of a virtual cybersecurity environme
 | Nmap | Network discovery and security testing | https://nmap.org/docs.html |
 | GitHub | Documentation and version control | https://docs.github.com/ |
 | VirtualBox Networking | Virtual network configuration | https://www.virtualbox.org/manual/ch06.html |
-
+| Windows 10 | Host operating system for the cybersecurity lab | https://www.microsoft.com/software-download/windows10 |
 ## 🏗️ 4. Laboratory Design
 
 The laboratory consists of a host computer running VirtualBox, with Kali Linux operating as a guest virtual machine.
