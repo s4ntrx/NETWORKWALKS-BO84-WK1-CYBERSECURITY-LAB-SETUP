@@ -188,40 +188,33 @@ The snapshot provides a recovery point before future experiments.
 
 | Test | Command / Method | Actual Result |
 |---|---|---|
-| IP address assignment | `ip a` | [Pass / Fail + observation] |
-| Routing configuration | `ip route` | [Pass / Fail + observation] |
-| Gateway connectivity | `ping -c 4 <gateway-ip>` | [Pass / Fail + observation] |
-| External connectivity | `ping -c 4 1.1.1.1` | [Pass / Fail + observation] |
-| DNS resolution | `getent hosts example.com` | [Pass / Fail + observation] |
-| Nmap availability | `nmap --version` | [Pass / Fail + observation] |
-| Snapshot creation | VirtualBox Snapshot Manager | [Pass / Fail + observation] |
+| IP address assignment | `ip a` | Pass - `10.0.0.3/24`  |
+| Routing configuration | `ip route` | Pass - `default via 10.0.0.1` |
+| Gateway connectivity | `ping -c 4 10.0.0.1` | Pass - `4 packets transmitted, 4 received` |
+| External connectivity | `ping -c 4 1.1.1.1` | Pass - `4 packets transmitted, 4 received,` |
+| DNS resolution | `getent hosts example.com` | Pass - `2 hosts` |
+| Nmap availability | `nmap --version` | Pass - `v7.99` |
+| Snapshot creation | VirtualBox Snapshot Manager | Pass - `cyberlab1` |
 
 ### Results Summary
 
-- **Overall status:** [Completed / Partially completed / In progress]
-- **Outstanding issues:** [List any unresolved problems]
-- **Evidence captured:** [List screenshots available]
+- **Overall status:** Completed 
+- **Outstanding issues:** NiL
 
-Only mark tests as passed after observing and recording their actual results.
+
 
 ---
 
 ## 🐛 8. Challenges and Troubleshooting
 
-### Challenge 1: [Describe the Issue]
+### Challenge 1: Setting up Kali Linux
 
-- **Observed behavior:** [What happened?]
-- **Investigation:** [Commands or checks performed]
-- **Root cause:** [What caused the issue?]
-- **Solution:** [How was it resolved?]
-- **Verification:** [What confirmed the outcome?]
+- **Observed behavior:** The virtualbox asked for an ISO image but Kali has .vbox and .vdi
+- **Investigation:** when importing Kali linux to VirtulaBox error occurred.
+- **Solution:** I ran the command `VBoxManage registervm /home/s4ntrx/Downloads/kali-linux-2026.2-virtualbox-amd64/kali-linux-2026.2-virtualbox-amd64.vbox`
+- **Verification:** It worked
+- **Evidence** 
 
-### Challenge 2: [Describe Another Issue]
-
-- **Observed behavior:** [Describe the problem]
-- **Investigation:** [Explain the checks performed]
-- **Resolution:** [Document the solution]
-- **Outcome:** [Record the result]
 
 ---
 
@@ -251,19 +244,6 @@ Only mark tests as passed after observing and recording their actual results.
 
 ## 📸 11. Project Evidence
 
-### Repository Structure
-
-```text
-cybersecurity-lab-setup/
-├── README.md
-└── screenshots/
-    ├── 01-virtualbox-manager.png
-    ├── 02-kali-vm-settings.png
-    ├── 03-virtual-network.png
-    ├── 04-ip-configuration.png
-    ├── 05-connectivity-tests.png
-    └── 06-baseline-snapshot.png
-```
 
 ### Displaying Screenshots
 
@@ -273,19 +253,9 @@ Use the following Markdown syntax to display a screenshot:
 ![VirtualBox network configuration](screenshots/03-virtual-network.png)
 ```
 
-Ensure the screenshot filenames match the actual files in your repository.
 
----
 
-## 🚀 12. Future Improvements
 
-- Add a deliberately vulnerable target virtual machine.
-- Analyze network traffic using Wireshark.
-- Practice authorized service discovery with Nmap.
-- Learn firewall configuration and traffic filtering.
-- Write structured security assessment reports.
-- Automate network verification using Bash scripts.
-- Create an isolated network for vulnerable target machines.
 
 ### Resources
 
@@ -307,6 +277,8 @@ Ensure the screenshot filenames match the actual files in your repository.
 7. [Nmap Documentation](https://nmap.org/docs.html)
 8. [GitHub Flavored Markdown Guide](https://github.github.com/gfm/)
 9. [GitHub Repository Documentation](https://docs.github.com/en/repositories)
+10. [Windows 10 Download](https://www.microsoft.com/software-download/windows10)
+
 
 ---
 
