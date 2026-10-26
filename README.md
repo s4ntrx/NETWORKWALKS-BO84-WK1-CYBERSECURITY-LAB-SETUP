@@ -163,7 +163,7 @@ ip route
 Test the gateway:
 
 ```bash
-ping -c 4 <gateway-ip>
+ping -c 4 10.0.0.1
 ```
 
 Test external IP connectivity:
@@ -184,7 +184,7 @@ Verify Nmap installation:
 nmap --version
 ```
 
-**Important:** Replace `<gateway-ip>` with your actual gateway address. Failed ping tests may result from ICMP filtering rather than a network failure.
+
 
 **Evidence:** ![Connectivity Tests](screenshots/connectivitytests.png)
 
